@@ -6,7 +6,7 @@ namespace Codewars_FakeBinary
     {
         public string FakeBin(string input)
         {
-            throw new NotImplementedException();
+            return string.Empty;
         }
     }
 }
