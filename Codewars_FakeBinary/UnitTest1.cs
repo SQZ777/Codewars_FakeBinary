@@ -17,7 +17,7 @@ namespace Codewars_FakeBinary
             Assert.AreEqual("0",new Kata().FakeBin("0"));
         }
 
-        
+        [TestMethod]
         public void Input_5_Should_Be_1()
         {
             Assert.AreEqual("1",new Kata().FakeBin("5"));
