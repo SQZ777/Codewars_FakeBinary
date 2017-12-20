@@ -16,5 +16,14 @@ namespace Codewars_FakeBinary
             //assert
             Assert.AreEqual(string.Empty,fakeResult);
         }
+
+        [TestMethod]
+        public void Input_0_Should_Be_0()
+        {
+            var input = "0";
+            var kata = new Kata();
+            var fakeResult = kata.FakeBin(input);
+            Assert.AreEqual("0",fakeResult);
+        }
     }
 }
