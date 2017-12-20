@@ -14,6 +14,10 @@ namespace Codewars_FakeBinary
                 {
                     result += 0;
                 }
+                else
+                {
+                    result += 1;
+                }
             }
             return result;
         }
