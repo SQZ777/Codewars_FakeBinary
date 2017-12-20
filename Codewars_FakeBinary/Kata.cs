@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Codewars_FakeBinary
 {
@@ -6,13 +7,7 @@ namespace Codewars_FakeBinary
     {
         public string FakeBin(string input)
         {
-            var inputArray = input.ToCharArray();
-            var result = string.Empty;
-            foreach (var c in inputArray)
-            {
-                result += judgeChar(c);
-            }
-            return result;
+            return input.ToCharArray().Aggregate(string.Empty, (current, c) => current + judgeChar(c));
         }
 
         private string judgeChar(char c)
