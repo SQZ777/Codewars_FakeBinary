@@ -6,15 +6,16 @@ namespace Codewars_FakeBinary
     {
         public string FakeBin(string input)
         {
-            if (input.Equals(string.Empty))
+            var inputArray = input.ToCharArray();
+            var result = string.Empty;
+            foreach (var c in inputArray)
             {
-                return input;
+                if (int.Parse(c.ToString()) < 5)
+                {
+                    result += 0;
+                }
             }
-            if (int.Parse(input) >= 5)
-            {
-                return "1";
-            }
-            return input;
+            return result;
         }
     }
 }
