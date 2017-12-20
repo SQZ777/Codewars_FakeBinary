@@ -10,16 +10,14 @@ namespace Codewars_FakeBinary
             var result = string.Empty;
             foreach (var c in inputArray)
             {
-                if (int.Parse(c.ToString()) < 5)
-                {
-                    result += 0;
-                }
-                else
-                {
-                    result += 1;
-                }
+                result += judgeChar(c);
             }
             return result;
+        }
+
+        private string judgeChar(char c)
+        {
+            return int.Parse(c.ToString()) < 5 ? "0" : "1";
         }
     }
 }
