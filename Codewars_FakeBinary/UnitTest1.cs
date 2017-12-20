@@ -29,6 +29,23 @@ namespace Codewars_FakeBinary
             Assert.AreEqual("00",new Kata().FakeBin("01"));
         }
 
+        [TestMethod]
+        public void Input_05_Should_Be_01()
+        {
+            Assert.AreEqual("01",new Kata().FakeBin("05"));
+        }
+
+        [TestMethod]
+        public void Input_12345678910_Should_Be_00001111100()
+        {
+            Assert.AreEqual("00001111100", new Kata().FakeBin("12345678910"));
+        }
+
+        [TestMethod]
+        public void Input_321987_Should_Be_000111()
+        {
+            Assert.AreEqual("000111", new Kata().FakeBin("321987"));
+        }
 
     }
 }
