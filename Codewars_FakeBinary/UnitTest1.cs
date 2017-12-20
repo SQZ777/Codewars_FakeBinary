@@ -8,22 +8,13 @@ namespace Codewars_FakeBinary
         [TestMethod]
         public void Input_StringEmpty_Shoudl_Be_StringEmpty()
         {
-            //arrange
-            var input = string.Empty;
-            var kata = new Kata();
-            //acctual
-            var fakeResult = kata.FakeBin(input);
-            //assert
-            Assert.AreEqual(string.Empty,fakeResult);
+            Assert.AreEqual(string.Empty,new Kata().FakeBin(string.Empty));
         }
 
         [TestMethod]
         public void Input_0_Should_Be_0()
         {
-            var input = "0";
-            var kata = new Kata();
-            var fakeResult = kata.FakeBin(input);
-            Assert.AreEqual("0",fakeResult);
+            Assert.AreEqual("0",new Kata().FakeBin("0"));
         }
     }
 }
